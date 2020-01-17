@@ -425,7 +425,7 @@
                                         <li class="photography">
                                             <div class="entry arlo_tm_portfolio_animation_wrap"
                                                  data-title="Sistem Informasi Manajemen Mesjid" data-category="SIMAJID">
-                                                <a href="http://simajid.faisal-ilhami.site" target="_blank">
+                                                <a href="http://simajid.faisalilhami.site" target="_blank">
                                                     <img src="{{ asset('img/simajid.PNG') }}" alt="SIMAJID"/>
                                                     <div class="arlo_tm_portfolio_image_main"
                                                          data-img-url="{{ asset('img/simajid.PNG') }}"></div>
@@ -445,7 +445,7 @@
                                         <li class="development">
                                             <div class="entry arlo_tm_portfolio_animation_wrap"
                                                  data-title="Aplikasi Pengelolaan Tiket" data-category="wsps">
-                                                <a href="http://demo.faisal-ilhami.site" target="_blank">
+                                                <a href="http://demo.faisalilhami.site" target="_blank">
                                                     <img src="{{ asset('img/wsps.PNG') }}" alt="wsps"/>
                                                     <div class="arlo_tm_portfolio_image_main"
                                                          data-img-url="{{ asset('img/wsps.PNG') }}"></div>
@@ -455,7 +455,7 @@
                                         <li class="development">
                                             <div class="entry arlo_tm_portfolio_animation_wrap"
                                                  data-title="Aplikasi Permohonan Mahasiswa" data-category="magang">
-                                                <a href="http://magang.faisal-ilhami.site" target="_blank">
+                                                <a href="http://magang.faisalilhami.site" target="_blank">
                                                     <img src="{{ asset('img/kp.PNG') }}" alt="magang"/>
                                                     <div class="arlo_tm_portfolio_image_main"
                                                          data-img-url="{{ asset('img/kp.PNG') }}"></div>
