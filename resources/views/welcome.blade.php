@@ -117,7 +117,7 @@
                                         class="fa fa-twitter"></i></a></li>
                             <li><a target="_blank" href="https://linkedin.com/in/faisal-ilhami-270197"><i
                                         class="fa fa-linkedin"></i></a></li>
-                            <li><a target="_blank" href="https://www.instagram.com/m.faisal27/"><i
+                            <li><a target="_blank" href="https://www.instagram.com/faisal_ilhami27/"><i
                                         class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
