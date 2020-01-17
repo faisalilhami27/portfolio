@@ -494,7 +494,7 @@
                                             <li><p><label>Email :</label><span><a>faisal.ilhami2797@gmail.com</a></span>
                                                 </p></li>
                                             <li><p><label>Handphone :</label><span>0857 9511 8959</span></p></li>
-                                            <li><p><label>Website :</label><span><a>www.faisal-ilhami.site</a></span>
+                                            <li><p><label>Website :</label><span><a>www.faisalilhami.site</a></span>
                                                 </p></li>
                                         </ul>
                                     </div>
