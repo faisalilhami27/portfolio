@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="description" content="learn-coding.site">
+    <meta name="description" content="faisalilhami.site">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Muhamad Faisal I A | Portofolio</title>
-    <link rel="icon" type="image/png" href="{{ asset('img/learn1.png') }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ asset('img/sikoding-mini.png') }}" sizes="32x32">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -70,7 +70,7 @@
     <div class="arlo_tm_mobile_header_wrap">
         <div class="main_wrap">
             <div class="logo">
-                <img src="{{ asset('img/learn.png') }}" width="25px" alt=""/>
+                <img src="{{ asset('img/sikoding1.png') }}" width="25px" alt=""/>
             </div>
             <div class="arlo_tm_trigger">
                 <div class="hamburger hamburger--collapse-r">
@@ -97,7 +97,7 @@
         <div class="arlo_tm_leftpart_wrap">
             <div class="leftpart_inner">
                 <div class="logo_wrap">
-                    <a href="#"><img src="{{ asset('img/learn.png') }}" width="150px" alt=""/></a>
+                    <a href="#"><img src="{{ asset('img/sikoding1.png') }}" width="150px" alt=""/></a>
                 </div>
                 <div class="menu_list_wrap">
                     <ul class="anchor_nav">
@@ -111,7 +111,7 @@
                 <div class="leftpart_bottom">
                     <div class="social_wrap">
                         <ul>
-                            <li><a target="_blank" href="https://facebook.com/muhamadfaisal.ilhamiakbar"><i
+                            <li><a target="_blank" href="https://facebook.com/faisal.ilhami27"><i
                                         class="fa fa-facebook"></i></a></li>
                             <li><a target="_blank" href="https://twitter.com/faisal_ilhami97"><i
                                         class="fa fa-twitter"></i></a></li>
@@ -191,7 +191,7 @@
                                                 Teknik Informatika angkatan 2015 dan lulus pada tahun 2019. Ketika kuliah saya juga menjabat sebagai Asisten
                                                 Laboratorium dan sejak semester enam saya sudah bergabung dengan tim
                                                 proyek untuk membuat aplikasi web dan hingga saat ini sudah mempunyai
-                                                pengalaman hampir dua tahun dalam membuat aplikasi web terhitung sejak
+                                                pengalaman dua tahun lebih dalam membuat aplikasi web terhitung sejak
                                                 2018.</p>
                                         </div>
                                         <div class="about_short_contact_wrap">
@@ -200,7 +200,7 @@
                                                     <span><label>Tanggal Lahir :</label> {{ date('d-m-Y', strtotime($birthday)) }}</span>
                                                 </li>
                                                 <li>
-                                                    <span><label>Umur :</label> {{ $diff->y }}</span>
+                                                    <span><label>Umur :</label> {{ $diff->y }} Tahun</span>
                                                 </li>
                                                 <li>
                                                     <span><label>Kota :</label> Bandung, Indonesia</span>
@@ -215,7 +215,7 @@
                                                     <span><label>Gejar :</label> Sarjana (S1)</span>
                                                 </li>
                                                 <li>
-                                                    <span><label>Website :</label> <span>www.learn-coding.site</span></span>
+                                                    <span><label>Website :</label> <span>www.faisalilhami.site</span></span>
                                                 </li>
                                                 <li>
                                                     <span><label>Mail :</label> <span style="font-size: 11px">faisal.ilhami2797@gmail.com</span></span>
@@ -284,6 +284,11 @@
                                                             class="arlo_tm_bar"></div></div></div>
                                             </div>
                                             <div class="arlo_tm_progress" data-value="40" data-color="#000">
+                                                <span><span class="label">Vue Js <span class="number">40%</span></span>
+                                                <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap"><div
+                                                            class="arlo_tm_bar"></div></div></div>
+                                            </div>
+                                            <div class="arlo_tm_progress" data-value="40" data-color="#000">
                                                 <span><span class="label">PostgreSQL <span
                                                             class="number">40%</span></span>
                                                 <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap"><div
@@ -315,8 +320,8 @@
                                                 <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap"><div
                                                             class="arlo_tm_bar"></div></div></div>
                                             </div>
-                                            <div class="arlo_tm_progress" data-value="65" data-color="#000">
-                                                <span><span class="label">Laravel <span class="number">65%</span></span>
+                                            <div class="arlo_tm_progress" data-value="80" data-color="#000">
+                                                <span><span class="label">Laravel <span class="number">80%</span></span>
                                                 <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap"><div
                                                             class="arlo_tm_bar"></div></div></div>
                                             </div>
@@ -424,11 +429,11 @@
                                     <ul class="arlo_tm_portfolio_list gallery_zoom">
                                         <li class="photography">
                                             <div class="entry arlo_tm_portfolio_animation_wrap"
-                                                 data-title="Sistem Informasi Manajemen Mesjid" data-category="SIMAJID">
-                                                <a href="http://simajid.faisalilhami.site" target="_blank">
-                                                    <img src="{{ asset('img/simajid.PNG') }}" alt="SIMAJID"/>
+                                                 data-title="Aplikasi Classroom" data-category="classroom">
+                                                <a href="http://classroom.investasikoding.com" target="_blank">
+                                                    <img src="{{ asset('img/classroom.PNG') }}" alt="classroom"/>
                                                     <div class="arlo_tm_portfolio_image_main"
-                                                         data-img-url="{{ asset('img/simajid.PNG') }}"></div>
+                                                         data-img-url="{{ asset('img/classroom.PNG') }}"></div>
                                                 </a>
                                             </div>
                                         </li>
