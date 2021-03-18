@@ -215,7 +215,7 @@
                                                     <span><label>Gejar :</label> Sarjana (S1)</span>
                                                 </li>
                                                 <li>
-                                                    <span><label>Website :</label> <span>www.faisalilhami.site</span></span>
+                                                    <span><label>Instagram :</label> <span>faisal.ilhami27</span></span>
                                                 </li>
                                                 <li>
                                                     <span><label>Mail :</label> <span style="font-size: 11px">faisal.ilhami2797@gmail.com</span></span>
@@ -499,8 +499,6 @@
                                             <li><p><label>Email :</label><span><a>faisal.ilhami2797@gmail.com</a></span>
                                                 </p></li>
                                             <li><p><label>Handphone :</label><span>0857 9511 8959</span></p></li>
-                                            <li><p><label>Website :</label><span><a>www.faisalilhami.site</a></span>
-                                                </p></li>
                                         </ul>
                                     </div>
                                 </div>
