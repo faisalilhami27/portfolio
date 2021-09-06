@@ -170,22 +170,7 @@
                 <span>Informasi utama diri saya</span>
               </div>
               <div class="arlo_tm_about_wrap">
-                <div class="author_wrap">
-                  <div class="leftbox">
-                    <div class="about_image_wrap parallax" data-relative-input="true">
-                      <div class="image layer" data-depth="0.1">
-                        <img src="{{ asset('img/Picture.jpg') }}" alt=""/>
-                        <div class="inner"
-                             style="background-image: url({{ asset('img/Picture.jpg') }});"></div>
-                      </div>
-                      <div class="border layer" data-depth="0.2">
-                        <img src="{{ asset('img/Picture.jpg') }}" alt=""/>
-                        <div class="inner"></div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="rightbox" style="margin-top: -70px">
+                  <div class="col-md-12" style="margin-top: -70px">
                     <div class="arlo_tm_mini_title_holder">
                       <h4>Saya seorang <span class="arlo_tm_animation_text_word"></span></h4>
                     </div>
