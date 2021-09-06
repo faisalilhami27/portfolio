@@ -462,7 +462,7 @@
                     <li class="photography">
                       <div class="entry arlo_tm_portfolio_animation_wrap"
                            data-title="Aplikasi Classroom" data-category="classroom">
-                        <a href="http://classroom.investasikoding.com" target="_blank">
+                        <a href="https://classroom.faisalilhami.my.id" target="_blank">
                           <img src="{{ asset('img/classroom.PNG') }}" alt="classroom"/>
                           <div class="arlo_tm_portfolio_image_main"
                                data-img-url="{{ asset('img/classroom.PNG') }}"></div>
@@ -472,7 +472,7 @@
                     <li class="design">
                       <div class="entry arlo_tm_portfolio_animation_wrap"
                            data-title="Sistem Informasi Akademik Sekolah" data-category="SIAKAD">
-                        <a href="http://is.isolution.id" target="_blank">
+                        <a href="http://demosmk.sekolah.kunci.co.id" target="_blank">
                           <img src="{{ asset('img/siakad.PNG') }}" alt="SIAKAD"/>
                           <div class="arlo_tm_portfolio_image_main"
                                data-img-url="{{ asset('img/siakad.PNG') }}"></div>
