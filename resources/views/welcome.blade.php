@@ -472,7 +472,7 @@
                     <li class="design">
                       <div class="entry arlo_tm_portfolio_animation_wrap"
                            data-title="Sistem Informasi Akademik Sekolah" data-category="SIAKAD">
-                        <a href="http://demosmk.sekolah.kunci.co.id" target="_blank">
+                        <a href="https://demosmk.sekolah.kunci.co.id" target="_blank">
                           <img src="{{ asset('img/siakad.PNG') }}" alt="SIAKAD"/>
                           <div class="arlo_tm_portfolio_image_main"
                                data-img-url="{{ asset('img/siakad.PNG') }}"></div>
@@ -482,7 +482,7 @@
                     <li class="development">
                       <div class="entry arlo_tm_portfolio_animation_wrap"
                            data-title="Aplikasi Pengelolaan Tiket" data-category="wsps">
-                        <a href="http://skripsi.investasikoding.com" target="_blank">
+                        <a href="https://skripsi.faisalilhami.my.id" target="_blank">
                           <img src="{{ asset('img/wsps.PNG') }}" alt="wsps"/>
                           <div class="arlo_tm_portfolio_image_main"
                                data-img-url="{{ asset('img/wsps.PNG') }}"></div>
@@ -492,10 +492,20 @@
                     <li class="development">
                       <div class="entry arlo_tm_portfolio_animation_wrap"
                            data-title="Aplikasi Permohonan Mahasiswa" data-category="magang">
-                        <a href="http://magang.investasikoding.com" target="_blank">
+                        <a href="https://magang.faisalilhami.my.id" target="_blank">
                           <img src="{{ asset('img/kp.PNG') }}" alt="magang"/>
                           <div class="arlo_tm_portfolio_image_main"
                                data-img-url="{{ asset('img/kp.PNG') }}"></div>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="development">
+                      <div class="entry arlo_tm_portfolio_animation_wrap"
+                           data-title="Sistem Informasi Manajemen Mesjid" data-category="simajid">
+                        <a href="https://simajid.faisalilhami.my.id" target="_blank">
+                          <img src="{{ asset('img/simajid.PNG') }}" alt="simajid"/>
+                          <div class="arlo_tm_portfolio_image_main"
+                               data-img-url="{{ asset('img/simajid.PNG') }}"></div>
                         </a>
                       </div>
                     </li>
