@@ -8,9 +8,9 @@
 jQuery(document).ready(function(){
 
 	"use strict";
-	
+
 	// here all ready functions
-	
+
 	arlo_tm_hamburger();
 	arlo_tm_imgtosvg();
 	arlo_tm_magnific_popup();
@@ -34,26 +34,26 @@ jQuery(document).ready(function(){
 	arlo_tm_ripple();
 	arlo_tm_switcher();
 	arlo_tm_data_images();
-	
-	
+
+
 	jQuery(window).on('scroll',function(){
 		//e.preventDefault();
 		arlo_tm_totop_myhide();
-		
+
 	});
-	
+
 	jQuery(window).on('resize',function(){
 		arlo_tm_miniboxes();
 		arlo_tm_isotope();
-		
+
 	});
-	
+
 	jQuery(window).load('body', function(){
 		setTimeout(function(){
         jQuery('.arlo_tm_preloader').addClass('loaded');
     }, 1000);
 	});
-	
+
 });
 
 // -----------------------------------------------------
@@ -66,15 +66,15 @@ jQuery(document).ready(function(){
 // -----------------------------------------------------
 
 function arlo_tm_hamburger(){
-	
+
 	"use strict";
-	
+
 	var hamburger 		= jQuery('.hamburger');
 	var mobileMenu		= jQuery('.arlo_tm_mobile_menu_wrap');
-	
+
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
-		
+
 		if(element.hasClass('is-active')){
 			element.removeClass('is-active');
 			mobileMenu.slideUp();
@@ -91,11 +91,11 @@ function arlo_tm_hamburger(){
 // -----------------------------------------------------
 
 function arlo_tm_imgtosvg(){
-	
+
 	"use strict";
-	
+
 	jQuery('img.svg').each(function(){
-		
+
 		var jQueryimg 		= jQuery(this);
 		var imgClass		= jQueryimg.attr('class');
 		var imgURL			= jQueryimg.attr('src');
@@ -125,14 +125,14 @@ function arlo_tm_imgtosvg(){
 // -----------------------------------------------------
 
 function arlo_tm_magnific_popup(){
-	
+
 	"use strict";
-	
+
 	jQuery('.open-popup-link').magnificPopup({
 		type:'inline',
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
-	
+
 	jQuery('.gallery').each(function() { // the containers for all your galleries
 		jQuery(this).magnificPopup({
 			delegate: 'a', // the selector for gallery item
@@ -152,7 +152,7 @@ function arlo_tm_magnific_popup(){
 			removalDelay: 300,
 			mainClass: 'mfp-fade'
 		});
-		
+
 	});
 	jQuery('.popup-youtube').each(function() { // the containers for all your galleries
 		jQuery(this).magnificPopup({
@@ -172,19 +172,19 @@ function arlo_tm_magnific_popup(){
 // -----------------------------------------------------
 
 function arlo_tm_jarallax(){
-	
+
 	"use strict";
-	
+
 	jQuery('.jarallax').each(function(){
 		var element			= jQuery(this);
 		var	customSpeed		= element.data('speed');
-		
+
 		if(customSpeed !== "undefined" && customSpeed !== ""){
 			customSpeed = customSpeed;
 		}else{
 			customSpeed 	= 0.5;
 		}
-		
+
 		element.jarallax({
 			speed: customSpeed,
 			automaticResize: true
@@ -197,12 +197,12 @@ function arlo_tm_jarallax(){
 // -------------------------------------------------
 
 function arlo_tm_list_height(){
-	
+
 	"use strict";
-	
+
 	var div			= jQuery('.about_short_contact_wrap');
 	var list		= div.find('li:nth-of-type(2n)');
-	
+
 	list.after("<div class='clearfix'></div>");
 }
 
@@ -211,7 +211,7 @@ function arlo_tm_list_height(){
 // -----------------    PORTFOLIO    ---------------
 // -------------------------------------------------
 
-// filterable 
+// filterable
 
 function arlo_tm_portfolio(){
 
@@ -224,10 +224,10 @@ function arlo_tm_portfolio(){
 		var filter		 = jQuery('.arlo_tm_portfolio_filter');
 
 		if(filter.length){
-			// Isotope Filter 
+			// Isotope Filter
 			filter.find('a').on('click', function(){
 				var selector = jQuery(this).attr('data-filter');
-				list.isotope({ 
+				list.isotope({
 					filter				: selector,
 					animationOptions	: {
 						duration			: 750,
@@ -236,22 +236,22 @@ function arlo_tm_portfolio(){
 					}
 				});
 				return false;
-			});	
+			});
 
 			// Change active element class
 			filter.find('a').on('click', function() {
 				filter.find('a').removeClass('current');
 				jQuery(this).addClass('current');
 				return false;
-			});	
+			});
 		}
 	}
 }
 
 function arlo_tm_projects() {
-	
+
 	"use strict";
-	
+
 	jQuery('.arlo_tm_portfolio_animation_wrap').each(function() {
 		jQuery(this).on('mouseenter', function() {
 			if (jQuery(this).data('title')) {
@@ -277,13 +277,13 @@ function arlo_tm_projects() {
 // -----------------------------------------------------
 
 function arlo_tm_anchor(){
-	
+
 	"use strict";
-	
+
 	jQuery('.anchor_nav').onePageNav();
-	
+
 	var scrollOffset = 0;
-	
+
 	jQuery(".anchor a").on('click', function(evn){
 		evn.preventDefault();
 		jQuery('html,body').scrollTo(this.hash, this.hash, {
@@ -293,7 +293,7 @@ function arlo_tm_anchor(){
 				easing: "easeInOutExpo"
 			}
 		});
-		return false;	
+		return false;
 	});
 }
 
@@ -302,44 +302,44 @@ function arlo_tm_anchor(){
 // -----------------------------------------------------
 
 function arlo_tm_contact_form(){
-	
+
 	"use strict";
-	
+
 	jQuery(".contact_form #send_message").on('click', function(){
-		
+
 		var name 		= jQuery(".contact_form #name").val();
 		var email 		= jQuery(".contact_form #email").val();
 		var message 	= jQuery(".contact_form #message").val();
 		var subject 	= jQuery(".contact_form #subject").val();
 		var success     = jQuery(".contact_form .returnmessage").data('success');
-	
+
 		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
-		//checking for blank fields	
+		//checking for blank fields
 		if(name===''||email===''||message===''){
-			
+
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 		}
 		else{
 			// Returns successful data submission message when the entered information is stored in database.
 			jQuery.post("modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
-				
+
 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
-				
-				
+
+
 				if(jQuery(".contact_form .returnmessage span.contact_error").length){
-					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);		
+					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);
 				}else{
 					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
 					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
 				}
-				
+
 				if(data===""){
 					jQuery("#contact_form")[0].reset();//To reset form fields on success
 				}
-				
+
 			});
 		}
-		return false; 
+		return false;
 	});
 }
 
@@ -348,9 +348,9 @@ function arlo_tm_contact_form(){
 // -----------------------------------------------------
 
 function arlo_tm_owl_carousel(){
-	
+
 	"use strict";
-	
+
 	var carousel			= jQuery('.arlo_tm_services_wrap .owl-carousel');
   	carousel.owlCarousel({
 			loop: true,
@@ -373,18 +373,18 @@ function arlo_tm_owl_carousel(){
 			1920:{items:3}
 		}
 	});
-	
+
 	jQuery('.arlo_tm_services_wrap .custom_nav > a.prev').on('click', function(){
 		carousel.trigger('prev.owl.carousel');
 		return false;
 	});
-	
+
 	jQuery('.arlo_tm_services_wrap .custom_nav > a.next').on('click', function(){
 		carousel.trigger('next.owl.carousel');
 		return false;
 	});
 	arlo_tm_imgtosvg();
-	
+
 	var carusel2			= jQuery('.arlo_tm_testimonial_wrap .owl-carousel');
   	carusel2.owlCarousel({
 		loop:true,
@@ -422,7 +422,7 @@ function tdProgress(container){
 jQuery('.arlo_tm_progress_wrap').each(function() {
 	"use strict";
 	var pWrap 			= jQuery(this);
-	pWrap.waypoint({handler: function(){tdProgress(pWrap);},offset:'90%'});	
+	pWrap.waypoint({handler: function(){tdProgress(pWrap);},offset:'90%'});
 });
 
 // -----------------------------------------------------
@@ -430,31 +430,31 @@ jQuery('.arlo_tm_progress_wrap').each(function() {
 // -----------------------------------------------------
 
  function arlo_tm_miniboxes(){
-	 
+
   "use strict";
-	 
+
   var el 			= jQuery('.arlo_tm_miniboxes');
-	 
+
   if(el.length){
    el.each(function(index, element) {
-         
+
     var child		= jQuery(element).find('.arlo_tm_minibox');
-    
+
     child.css({height:'auto'});
     // Get an array of all element heights
-    
+
     var W 		= jQuery(window).width();
     if(W > 480){
      var elementHeights = child.map(function() {return jQuery(this).outerHeight();}).get();
-    
+
      // Math.max takes a variable number of arguments
      // `apply` is equivalent to passing each height as an argument
      var maxHeight 		= Math.max.apply(null, elementHeights);
-     
+
      // Set each height to the max height
-     child.css({height:maxHeight+'px'}); 
+     child.css({height:maxHeight+'px'});
     }
-   });  
+   });
   }
  }
 
@@ -463,13 +463,13 @@ jQuery('.arlo_tm_progress_wrap').each(function() {
 // -----------------------------------------------------
 
 function arlo_tm_isotope(){
-	
+
 	"use strict";
-	
+
 	jQuery('.masonry').isotope({
 		itemSelector: '.masonry_item',
 		masonry: {
-			
+
 		}
 	});
 }
@@ -479,26 +479,26 @@ function arlo_tm_isotope(){
 // -----------------------------------------------------
 
 function arlo_tm_totop(){
-	
+
 	"use strict";
-	
+
 	jQuery(".arlo_tm_totop").on('click', function(e) {
-		e.preventDefault();		
+		e.preventDefault();
 		jQuery("html, body").animate({ scrollTop: 0 }, 'slow');
 		return false;
 	});
 }
 
 function arlo_tm_totop_myhide(){
-	
+
 	"use strict";
-	
+
 	var toTop		=jQuery(".arlo_tm_totop");
 	if(toTop.length){
 		var topOffSet 	=toTop.offset().top;
-		
+
 		if(topOffSet > 1000){
-			toTop.addClass('opened');	
+			toTop.addClass('opened');
 		}else{
 			toTop.removeClass('opened');
 		}
@@ -509,13 +509,13 @@ function arlo_tm_totop_myhide(){
 // -------------------------------------------------
 
 function arlo_tm_animate_text(){
-	
+
 	"use strict";
-	
+
 	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
-	
+
 		animateSpan.typed({
-			strings: ["Freelancer", "Web Developer"],
+			strings: ["Freelancer", "Backend Developer"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
@@ -532,7 +532,7 @@ function arlo_tm_popup_blog(){
 	var popupBox		= jQuery('#arlo_tm_popup_blog');
 	var popupInner		= popupBox.find('.inner_popup');
 	var closePopup		= popupBox.find('.close');
-	
+
 	li.each(function(){
 		var element		= jQuery(this);
 		var button		= element.find('.read_more a,.title_holder a,.link_news');
@@ -541,7 +541,7 @@ function arlo_tm_popup_blog(){
 		var imgData		= mainImage.data('url');
 		var title		= element.find('.title_holder h3');
 		var titleHref	= element.find('.title_holder h3 a').html();
-		
+
 		mainImage.css({backgroundImage: 'url('+imgData+')'});
 		button.on('click',function(){
 			popupBox.addClass('opened');
@@ -565,22 +565,22 @@ function arlo_tm_popup_blog(){
 // -----------------------------------------------------
 
 function arlo_tm_popupscroll(){
-	
+
 	"use strict";
-	
+
 	var H				= jQuery(window).height();
 	var scrollable		= jQuery('.scrollable');
-	
+
 	var popupBox		= jQuery('.arlo_tm_popup_blog .inner_popup');
-	
+
 	popupBox.css({height:H-100});
-	
+
 	scrollable.each(function(){
 		var element		= jQuery(this);
 		var wH			= jQuery(window).height();
-		
+
 		element.css({height: wH-100});
-		
+
 		element.niceScroll({
 			touchbehavior:false,
 			cursorwidth:0,
@@ -595,12 +595,12 @@ function arlo_tm_popupscroll(){
 // -------------------------------------------------
 
 function arlo_tm_kenburn_slider(){
-	
+
 	"use strict";
-	
+
 		jQuery(function() {
 			jQuery('.arlo_tm_hero_header_wrap .overlay_slider').vegas({
-			timer:false,	
+			timer:false,
 			animation: [ 'kenburnsUp',  'kenburnsLeft', 'kenburnsRight'],
 			delay:7000,
 
@@ -619,9 +619,9 @@ function arlo_tm_kenburn_slider(){
 // -------------------------------------------------
 
 function arlo_tm_ripple(){
-	
+
 	"use strict";
-	
+
 	jQuery('#ripple').ripples({
 			resolution: 500,
 			dropRadius: 20,
@@ -640,14 +640,14 @@ function arlo_tm_ripple(){
 // -----------------------------------------------------
 
 function arlo_tm_switcher(){
-	
+
 	"use strict";
-	
+
 	var switcherOpener				= jQuery('.arlo_tm_resize');
 	var switcherIcon				= jQuery('.arlo_tm_leftpart_wrap .arlo_tm_resize i');
 	var leftPart					= jQuery('.arlo_tm_leftpart_wrap');
 	var rightPart					= jQuery('.arlo_tm_rightpart');
-	
+
 	switcherOpener.on('click',function(){
 		if(switcherOpener.hasClass('opened')){
 			switcherOpener.removeClass('opened');
@@ -663,16 +663,16 @@ function arlo_tm_switcher(){
 		setTimeout(function(){jQuery('#ripple').ripples('updateSize');},101);
 		setTimeout(function(){jQuery('#ripple').ripples('updateSize');},201);
 		setTimeout(function(){jQuery('#ripple').ripples('updateSize');},301);
-		
+
 		if(jQuery('.jarallax').length){
 			jQuery('.jarallax').jarallax('destroy');
 			setTimeout(function(){arlo_tm_jarallax();},300);
-		
+
 		}
 		return false;
-		
+
 	});
-	
+
 
 }
 
@@ -693,10 +693,10 @@ jQuery('.arlo_tm_counter').each(function() {
 					refreshInterval: 50,
 					formatter: function (value, options) {
 						return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-					},	
+					},
 				});
 			}
-		},offset:'80%'	
+		},offset:'80%'
 	});
 });
 
@@ -705,11 +705,11 @@ jQuery('.arlo_tm_counter').each(function() {
 // -----------------------------------------------------
 
 function arlo_tm_data_images(){
-	
+
 	"use strict";
-	
+
 	var data			= jQuery('*[data-img-url]');
-	
+
 	data.each(function(){
 		var element			= jQuery(this);
 		var url				= element.data('img-url');
@@ -722,12 +722,12 @@ function arlo_tm_data_images(){
 // -----------------------------------------------------
 
 	function arlo_tm_about_animation(){
-		
+
 		"use strict";
-		
-		if ($('.parallax').length > 0) { 
+
+		if ($('.parallax').length > 0) {
 		  var scene = $('.parallax').get(0);
-		  var parallax = new Parallax(scene, { 
+		  var parallax = new Parallax(scene, {
 			relativeInput: true,
 			onReady: function() { console.log('ready!');
 		  } });
