@@ -224,7 +224,7 @@
                     <div class="buttons_wrap">
                       <ul>
                         <li>
-                          <a href="{{ asset('document/cv.pdf') }}"
+                          <a href="{{ asset('document/latest-cv.pdf') }}"
                              target="_blank"><span>Download CV</span></a>
                         </li>
                         <li class="anchor">
