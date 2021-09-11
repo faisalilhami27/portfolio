@@ -209,6 +209,9 @@
                           <span><label>Instagram :</label> <span>faisal.ilhami27</span></span>
                         </li>
                         <li>
+                          <span><label>Github :</label> <span>faisalilhami27</span></span>
+                        </li>
+                        <li>
                           <span><label>Mail :</label><span>faisal.ilhami2797@gmail.com</span></span>
                         </li>
                         <li>
