@@ -276,7 +276,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="arlo_tm_progress" data-value="25" data-color="#000">
+                      <div class="arlo_tm_progress" data-value="30" data-color="#000">
                         <div>
                           <span class="label">Bootstrap
                             <span class="number">30%</span>
