@@ -258,18 +258,8 @@
                     <div class="arlo_tm_progress_wrap" data-size="small" data-round="c" data-strip="off">
                       <div class="arlo_tm_progress" data-value="15" data-color="#000">
                         <div>
-                          <span class="label">Nuxt Js
+                          <span class="label">Next Js
                             <span class="number">15%</span>
-                          </span>
-                          <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap">
-                              <div class="arlo_tm_bar"></div></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="arlo_tm_progress" data-value="25" data-color="#000">
-                        <div>
-                          <span class="label">Bootstrap
-                            <span class="number">25%</span>
                           </span>
                           <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap">
                               <div class="arlo_tm_bar"></div></div>
@@ -279,6 +269,16 @@
                       <div class="arlo_tm_progress" data-value="30" data-color="#000">
                         <div>
                           <span class="label">Express Js
+                            <span class="number">30%</span>
+                          </span>
+                          <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap">
+                              <div class="arlo_tm_bar"></div></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="arlo_tm_progress" data-value="25" data-color="#000">
+                        <div>
+                          <span class="label">Bootstrap
                             <span class="number">30%</span>
                           </span>
                           <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap">
@@ -472,16 +472,16 @@
                         </a>
                       </div>
                     </li>
-                    <li class="design">
-                      <div class="entry arlo_tm_portfolio_animation_wrap"
-                           data-title="Sistem Informasi Akademik Sekolah" data-category="SIAKAD">
-                        <a href="http://demosmk.sekolah.kunci.co.id" target="_blank">
-                          <img src="{{ asset('img/siakad.PNG') }}" alt="SIAKAD"/>
-                          <div class="arlo_tm_portfolio_image_main"
-                               data-img-url="{{ asset('img/siakad.PNG') }}"></div>
-                        </a>
-                      </div>
-                    </li>
+{{--                    <li class="design">--}}
+{{--                      <div class="entry arlo_tm_portfolio_animation_wrap"--}}
+{{--                           data-title="Sistem Informasi Akademik Sekolah" data-category="SIAKAD">--}}
+{{--                        <a href="http://demosmk.sekolah.kunci.co.id" target="_blank">--}}
+{{--                          <img src="{{ asset('img/siakad.PNG') }}" alt="SIAKAD"/>--}}
+{{--                          <div class="arlo_tm_portfolio_image_main"--}}
+{{--                               data-img-url="{{ asset('img/siakad.PNG') }}"></div>--}}
+{{--                        </a>--}}
+{{--                      </div>--}}
+{{--                    </li>--}}
                     <li class="development">
                       <div class="entry arlo_tm_portfolio_animation_wrap"
                            data-title="Aplikasi Pengelolaan Tiket" data-category="wsps">
