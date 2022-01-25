@@ -268,7 +268,7 @@
                       </div>
                       <div class="arlo_tm_progress" data-value="30" data-color="#000">
                         <div>
-                          <span class="label">Express Js
+                          <span class="label">Bootstrap
                             <span class="number">30%</span>
                           </span>
                           <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap">
@@ -278,7 +278,7 @@
                       </div>
                       <div class="arlo_tm_progress" data-value="30" data-color="#000">
                         <div>
-                          <span class="label">Bootstrap
+                          <span class="label">Express Js
                             <span class="number">30%</span>
                           </span>
                           <div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap">
